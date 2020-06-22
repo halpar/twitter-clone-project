@@ -7,7 +7,7 @@
  Project's development purpose is practicing CRUD operations.
  Feel free to use UI.
  
- Here is some in-app images;
+# Here is some in-app images
    
  ![ScreenShot](https://github.com/halpar/twitter-clone-project/blob/master/twitter-project/wwwroot/images/twitter-login.png)
  
