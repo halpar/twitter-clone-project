@@ -1,0 +1,213 @@
+﻿
+@{
+    var userName = ViewBag.username;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        @ViewBag.Title - Twitter
+    </title>
+    <link rel="stylesheet" type="text/css" href="~/css/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/c938557ed7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="leftside" class="col-sm-3">
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                        <i id="twitterIcon" class="fab fa-twitter  fa-2x" style="color: #1DA1F2;"></i>
+                    </div>
+                    <div class="container-left">
+                        <div class="navbar" aria-expanded="true">
+                            <ol id="left-order" class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="@Url.Action("HomePage", "Home")"><span class="fas fa-home"></span> &nbsp;&nbsp;Anasayfa</a>
+                                    @*@Html.ActionLink("Linke Git", "Index", "Home", new { @class = "btn btn-success" })*@
+                                </li>
+                                <li>
+                                    <a href="#fake"><span class="fas fa-hashtag"></span> &nbsp;&nbsp;Keşfet</a>
+                                </li>
+                                <li>
+                                    <a href="https://localhost:44398/home/notifications"><span class="far fa-bell"></span> &nbsp;&nbsp;Bildirimler</a>
+                                </li>
+                                <li>
+                                    <a href="#fake"><span class="fas fa-envelope"></span> &nbsp;&nbsp;Mesajlar</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://localhost:44398/home/bookmarks">
+                                        <span class="far fa-bookmark"></span> &nbsp;&nbsp;Yer  İşaretleri
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#fake"><span class="far fa-list-alt"></i></span> &nbsp;&nbsp;Listeler</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Profile", "Home")"><span class="fas fa-user"></span> &nbsp;&nbsp;Profil</a>
+                                </li>
+                                <li>
+                                    <a href="#fake"><span class="fas fa-ellipsis-v"></span> &nbsp;&nbsp;Daha Fazla</a>
+                                </li>
+                                <li>
+                                    <a id="tweetle" href="#fake">Tweetle</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="panelcol" class="col-sm-6">
+                @RenderBody()
+            </div>
+            <div id="rightside" class="col-sm-3">
+                <div class="searchcontainer">
+                    <div class="searchbar">
+                        <input class="search_input" type="text" placeholder="Twitter'da ara">
+                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="placeholderdiv">
+                </div>
+                <div id="panelgundem" class="panel panel-default panel-custom">
+
+                    <div id="followpanelheader" class="panel-heading">
+                        <h3 class="panel-title">
+                            Gündem
+                        </h3>
+                        <a href=""><i class="fas fa-cog"></i></a>
+                    </div>
+                    <div id="feedpanel" class="panel-body">
+                        <div class="feed">
+                            <div class="feedheader">
+                                <span>Türkiye tarihinde gündemde</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="hashtag">
+                                <span>#Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div class="count">
+                                <span>37,5B Tweet</span>
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feedheader">
+                                <span>Türkiye tarihinde gündemde</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="hashtag">
+                                <span>#Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div class="count">
+                                <span>37,5B Tweet</span>
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feedheader">
+                                <span>Türkiye tarihinde gündemde</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="hashtag">
+                                <span>#Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div class="count">
+                                <span>37,5B Tweet</span>
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feedheader">
+                                <span>Türkiye tarihinde gündemde</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="hashtag">
+                                <span>#Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div class="count">
+                                <span>37,5B Tweet</span>
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feedheader">
+                                <span>Türkiye tarihinde gündemde</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="hashtag">
+                                <span>#Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div class="count">
+                                <span>37,5B Tweet</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="feedsfooter" class="panel-footer">
+                        <a href="www.google.it">
+                            Daha fazla göster
+                        </a>
+                    </div>
+                </div>
+                <div id="panelfollow" class="panel panel-default panel-custom">
+                    <div id="followpanelheader" class="panel-heading">
+                        <h3 class="panel-title">
+                            Kimi takip etmeli?
+                        </h3>
+                    </div>
+                    <div id="followpanel" class="panel-body">
+
+                        @if (ViewBag.notfollowing != null)
+                        {
+                            foreach (User usr in ViewBag.notFollowing)
+                            {
+                                <div class="media">
+                                    <div class="media-left">@*  *@
+                                        <img src="~/images/@usr.ProfileImage" alt="" class="media-object img-rounded" width="64" height="64">
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <form id="follow-form" action="@Url.Action("OtherProfile", "Home")" name="follow-form" method="post">
+                                                <input type="hidden" name="UserId" value="@usr.UserId" id="follow-userid" hidden />
+                                                <button class="username-tag-btn" type="submit" id="username-tag">@usr.Name</button>
+                                                <span></span>
+                                            </form>
+                                            <div>
+                                                <form id="follow-form" action="@Url.Action("Follow", "Home")" name="follow-form" method="post">
+                                                    <input type="hidden" name="UserId" value="@usr.UserId" id="follow-userid" hidden />
+                                                    <button class="follow-button" type="submit" id="follow-btn">Takip et</button>
+                                                    <span></span>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <p>@String.Format("@{0}",usr.Username)<p>
+                                    </div>
+                                </div>
+                            }
+                        }
+
+                    </div>
+                    <div id="followpanelfooter" class="panel-footer">
+                        <a href="www.google.it">
+                            Daha fazla göster
+                        </a>
+                    </div>
+                </div>
+                <div class="well well-sm">
+                    <ul class="list-inline">
+                        <li><a href="#">Şartlar</a></li>
+                        <li><a href="#">Gizlilik Politikası</a></li>
+                        <li><a href="#">Çerezler</a></li>
+                        <li><a href="#">Reklam Bilgisi</a></li>
+                        <li><a href="#">Daha fazla</a></li>
+                        <li><a href="#">© 2020 Twitter, Inc.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
