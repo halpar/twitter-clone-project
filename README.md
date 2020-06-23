@@ -1,8 +1,8 @@
 # twitter-clone-project
 
- Backend developed via .Net Core
- ORM Tool : EF.Core
- Frontend : Html5 , Css3 , Vanilla JS
+ Backend developed via .Net Core , 
+ EF Core as ORM tool,
+ Frontend developed via  Html5 , Css3 , Vanilla JS
  
  Project's development purpose is practicing CRUD operations.
  Feel free to use UI.
